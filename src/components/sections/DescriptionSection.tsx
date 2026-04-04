@@ -1,61 +1,38 @@
 const phases = [
-  {
-    phase: "Phase 1",
-    title: "Research & Analysis",
-    description: "Comprehensive research phase including literature review, stakeholder analysis, and requirements gathering to establish a solid foundation for the project.",
-  },
-  {
-    phase: "Phase 2",
-    title: "Design & Planning",
-    description: "Development of system architecture, detailed project plans, and resource allocation strategies based on findings from the research phase.",
-  },
-  {
-    phase: "Phase 3",
-    title: "Implementation",
-    description: "Systematic execution of the project plan, including development, testing, and iterative refinement of the proposed solution.",
-  },
-  {
-    phase: "Phase 4",
-    title: "Evaluation & Deployment",
-    description: "Comprehensive testing, stakeholder feedback integration, final documentation, and deployment of the completed system.",
-  },
+  { phase: "01", title: "Research & Analysis", description: "Literature review, stakeholder analysis, and requirements gathering." },
+  { phase: "02", title: "System Design", description: "Architecture planning, UI/UX design, and resource allocation." },
+  { phase: "03", title: "Development", description: "Platform development, content creation, and integration of ICT tools." },
+  { phase: "04", title: "Testing & Deployment", description: "Quality assurance, user testing, feedback integration, and launch." },
 ];
 
 export function DescriptionSection() {
   return (
-    <section id="description" className="scroll-mt-20">
-      <div className="space-y-6">
-        <div className="border-l-4 border-primary pl-6">
-          <h2 className="text-3xl font-serif font-bold text-heading">Description</h2>
-          <p className="text-muted-foreground mt-1 text-sm">Detailed Project Information</p>
-        </div>
-
-        <div className="bg-card rounded-lg border p-6 space-y-4 shadow-sm">
-          <p className="leading-relaxed text-foreground/90">
-            The proposed system is designed as a multi-phase initiative that progresses 
-            through distinct stages of development. Each phase builds upon the outcomes 
-            of the previous stage, ensuring a structured and methodical approach to 
-            achieving the project's objectives.
+    <section id="description" className="py-20 scroll-mt-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center space-y-4 mb-12">
+          <span className="text-xs font-semibold tracking-[0.2em] text-primary uppercase">Description</span>
+          <h2 className="text-3xl sm:text-4xl font-display font-bold text-foreground">
+            Project Methodology
+          </h2>
+          <div className="h-1 w-16 bg-primary mx-auto rounded-full" />
+          <p className="text-foreground/60 max-w-2xl mx-auto text-sm">
+            The Digital Learning Hub follows a structured multi-phase approach, ensuring
+            systematic progress from concept to deployment.
           </p>
         </div>
 
-        <div className="grid gap-4">
-          {phases.map((item, index) => (
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {phases.map((item, i) => (
             <div
-              key={index}
-              className="bg-card rounded-lg border p-5 shadow-sm transition-all duration-200 hover:shadow-md hover:border-primary/30 group"
+              key={i}
+              className="relative bg-card rounded-xl border border-border p-6 transition-all duration-200 hover:border-primary/40 group"
             >
-              <div className="flex items-start gap-4">
-                <div className="bg-primary text-primary-foreground rounded-full h-10 w-10 flex items-center justify-center shrink-0 font-serif font-bold text-sm transition-transform duration-200 group-hover:scale-105">
-                  {index + 1}
-                </div>
-                <div className="space-y-1">
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs font-medium text-primary uppercase tracking-wider">{item.phase}</span>
-                  </div>
-                  <h3 className="font-serif font-bold text-lg text-foreground">{item.title}</h3>
-                  <p className="text-foreground/80 leading-relaxed text-sm">{item.description}</p>
-                </div>
+              <span className="text-5xl font-display font-bold text-primary/10 absolute top-4 right-4 group-hover:text-primary/20 transition-colors">
+                {item.phase}
+              </span>
+              <div className="relative z-10 space-y-3 pt-6">
+                <h3 className="font-display font-bold text-foreground">{item.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
               </div>
             </div>
           ))}

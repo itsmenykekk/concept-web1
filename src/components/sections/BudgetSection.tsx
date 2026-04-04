@@ -1,57 +1,56 @@
-const budgetItems = [
-  { category: "Personnel & Labor", amount: 45000, description: "Salaries, consultants, and support staff" },
-  { category: "Equipment & Technology", amount: 18500, description: "Hardware, software licenses, and infrastructure" },
-  { category: "Research Materials", amount: 8200, description: "Publications, data access, and reference materials" },
-  { category: "Travel & Communication", amount: 5800, description: "Site visits, conferences, and communication tools" },
-  { category: "Training & Development", amount: 6500, description: "Workshops, certifications, and skill development" },
-  { category: "Contingency Fund", amount: 6000, description: "Unforeseen expenses and risk mitigation" },
+const categories = [
+  { name: "Online Platform", amount: 1500 },
+  { name: "Student Activities", amount: 1200 },
+  { name: "Grade Levels", amount: 800 },
+  { name: "Digital Resources", amount: 1000 },
+  { name: "Paper/Print Materials", amount: 500 },
 ];
 
 export function BudgetSection() {
-  const total = budgetItems.reduce((sum, item) => sum + item.amount, 0);
+  const total = categories.reduce((s, c) => s + c.amount, 0);
 
   return (
-    <section id="budget" className="scroll-mt-20">
-      <div className="space-y-6">
-        <div className="border-l-4 border-primary pl-6">
-          <h2 className="text-3xl font-serif font-bold text-heading">Budget</h2>
-          <p className="text-muted-foreground mt-1 text-sm">Estimated Cost Breakdown</p>
+    <section id="budget" className="py-20 bg-section-alt scroll-mt-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center space-y-4 mb-12">
+          <span className="text-xs font-semibold tracking-[0.2em] text-primary uppercase">Budget</span>
+          <h2 className="text-3xl sm:text-4xl font-display font-bold text-foreground">
+            Project Budget
+          </h2>
+          <div className="h-1 w-16 bg-primary mx-auto rounded-full" />
+          <p className="text-foreground/60 max-w-2xl mx-auto text-sm">
+            A breakdown of the estimated project costs, covering materials and resources necessary for implementation.
+          </p>
         </div>
 
-        <div className="bg-card rounded-lg border shadow-sm overflow-hidden">
-          <div className="overflow-x-auto">
-            <table className="w-full">
-              <thead>
-                <tr className="bg-primary text-primary-foreground">
-                  <th className="text-left p-4 font-serif font-bold text-sm">Category</th>
-                  <th className="text-left p-4 font-serif font-bold text-sm hidden sm:table-cell">Description</th>
-                  <th className="text-right p-4 font-serif font-bold text-sm">Amount (USD)</th>
-                </tr>
-              </thead>
-              <tbody>
-                {budgetItems.map((item, index) => (
-                  <tr
-                    key={index}
-                    className="border-b border-border transition-colors duration-150 hover:bg-maroon-light/50"
-                  >
-                    <td className="p-4 font-medium text-foreground">{item.category}</td>
-                    <td className="p-4 text-muted-foreground text-sm hidden sm:table-cell">{item.description}</td>
-                    <td className="p-4 text-right font-mono text-foreground">
-                      ${item.amount.toLocaleString()}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-              <tfoot>
-                <tr className="bg-primary/10">
-                  <td className="p-4 font-serif font-bold text-heading">Total</td>
-                  <td className="p-4 hidden sm:table-cell"></td>
-                  <td className="p-4 text-right font-mono font-bold text-heading text-lg">
-                    ${total.toLocaleString()}
-                  </td>
-                </tr>
-              </tfoot>
-            </table>
+        {/* Category pills */}
+        <div className="flex flex-wrap justify-center gap-2 mb-10">
+          {categories.map((cat, i) => (
+            <span
+              key={i}
+              className="bg-card border border-border rounded-full px-4 py-2 text-xs font-medium text-foreground/80 hover:border-primary/40 hover:text-primary transition-all duration-200 cursor-default"
+            >
+              {cat.name}
+            </span>
+          ))}
+        </div>
+
+        {/* Budget table */}
+        <div className="max-w-2xl mx-auto bg-card rounded-xl border border-border overflow-hidden">
+          {categories.map((cat, i) => (
+            <div
+              key={i}
+              className={`flex items-center justify-between px-6 py-4 transition-colors hover:bg-secondary/30 ${
+                i !== categories.length - 1 ? "border-b border-border" : ""
+              }`}
+            >
+              <span className="text-sm text-foreground/80">{cat.name}</span>
+              <span className="text-sm font-mono font-semibold text-foreground">₱{cat.amount.toLocaleString()}</span>
+            </div>
+          ))}
+          <div className="flex items-center justify-between px-6 py-4 bg-primary/10 border-t border-primary/20">
+            <span className="font-display font-bold text-foreground">Total</span>
+            <span className="font-mono font-bold text-primary text-lg">₱{total.toLocaleString()}</span>
           </div>
         </div>
       </div>
