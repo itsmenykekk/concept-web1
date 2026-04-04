@@ -1,32 +1,25 @@
 export function IntroductionSection() {
   return (
-    <section id="introduction" className="scroll-mt-20">
-      <div className="space-y-6">
-        <div className="border-l-4 border-primary pl-6">
-          <h2 className="text-3xl font-serif font-bold text-heading">Introduction</h2>
-          <p className="text-muted-foreground mt-1 text-sm">Project Overview</p>
-        </div>
-
-        <div className="bg-card rounded-lg border p-6 space-y-4 shadow-sm">
-          <p className="leading-relaxed text-foreground/90">
-            This concept paper presents a comprehensive overview of the proposed project, 
-            outlining its scope, objectives, and anticipated impact. The initiative is designed 
-            to address current challenges within the target domain by leveraging modern 
-            methodologies and innovative solutions.
+    <section id="intro" className="py-20 scroll-mt-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto text-center space-y-6">
+          <span className="text-xs font-semibold tracking-[0.2em] text-primary uppercase">Introduction</span>
+          <h2 className="text-3xl sm:text-4xl font-display font-bold text-foreground">
+            Project Overview
+          </h2>
+          <div className="h-1 w-16 bg-primary mx-auto rounded-full" />
+          <p className="text-foreground/70 leading-relaxed">
+            This concept paper presents a comprehensive overview of the Digital Learning Hub,
+            a platform designed to enhance student learning through ICT. The initiative leverages
+            modern digital tools to create collaborative, knowledge-rich, and academically
+            focused learning environments.
           </p>
-          <p className="leading-relaxed text-foreground/90">
-            The project aims to deliver a scalable and sustainable solution that aligns with 
-            established academic and industry standards. Through careful planning and systematic 
-            execution, this proposal seeks to bridge the gap between theoretical frameworks 
-            and practical implementation.
+          <p className="text-foreground/60 leading-relaxed text-sm">
+            By integrating technology into the educational process, this project aims to
+            bridge the gap between traditional learning methods and the demands of the
+            21st-century digital landscape, equipping students with essential skills for
+            their academic and professional futures.
           </p>
-          <div className="bg-maroon-light border border-maroon-border rounded-md p-4 mt-4">
-            <p className="text-sm text-foreground/80 italic">
-              "Innovation distinguishes between a leader and a follower." — This project 
-              embodies the spirit of innovation by introducing novel approaches to long-standing 
-              challenges in the field.
-            </p>
-          </div>
         </div>
       </div>
     </section>
