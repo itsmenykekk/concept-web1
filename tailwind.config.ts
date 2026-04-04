@@ -57,6 +57,15 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        maroon: {
+          light: "hsl(var(--maroon-light))",
+          border: "hsl(var(--maroon-border))",
+        },
+        heading: "hsl(var(--heading-color))",
+      },
+      fontFamily: {
+        serif: ["Merriweather", "serif"],
+        sans: ["Source Sans 3", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
