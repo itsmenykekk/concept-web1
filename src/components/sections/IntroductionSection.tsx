@@ -8,18 +8,11 @@ export function IntroductionSection() {
             Project Overview
           </h2>
           <div className="h-1 w-16 bg-primary mx-auto rounded-full" />
-          <p className="text-foreground/70 leading-relaxed">
-            This concept paper presents a comprehensive overview of the Digital Learning Hub,
-            a platform designed to enhance student learning through ICT. The initiative leverages
-            modern digital tools to create collaborative, knowledge-rich, and academically
-            focused learning environments.
-          </p>
-          <p className="text-foreground/60 leading-relaxed text-sm">
-            By integrating technology into the educational process, this project aims to
-            bridge the gap between traditional learning methods and the demands of the
-            21st-century digital landscape, equipping students with essential skills for
-            their academic and professional futures.
-          </p>
+          <div className="border border-dashed border-border rounded-xl p-10 bg-card/50">
+            <p className="text-muted-foreground italic text-sm">
+              Wala pang laman — hinihintay pa ang concept paper.
+            </p>
+          </div>
         </div>
       </div>
     </section>
