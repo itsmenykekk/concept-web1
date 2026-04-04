@@ -1,10 +1,10 @@
 import { User, Briefcase, Mail, Phone } from "lucide-react";
 
 const contactDetails = [
-  { icon: User, label: "Name", value: "Juan Dela Cruz" },
-  { icon: Briefcase, label: "Position", value: "Project Coordinator" },
-  { icon: Mail, label: "Email", value: "juandelacruz@email.com" },
-  { icon: Phone, label: "Phone", value: "0915-546-6789" },
+  { icon: User, label: "Name", value: "Angela Gardoce" },
+  { icon: Briefcase, label: "Position", value: "Eywan" },
+  { icon: Mail, label: "Email", value: "anotara@gmail.com" },
+  { icon: Phone, label: "Phone", value: "numberko" },
 ];
 
 export function ContactSection() {
