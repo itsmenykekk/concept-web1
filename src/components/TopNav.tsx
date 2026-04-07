@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, BookOpen, Target, FileText, Coins, MessageCircle, Sparkles } from "lucide-react";
 
 const navItems = [
-  { label: "📖 Intro", id: "intro" },
-  { label: "🎯 Purpose", id: "purpose" },
-  { label: "📋 Description", id: "description" },
-  { label: "💰 Budget", id: "budget" },
-  { label: "📬 Contact", id: "contact" },
+  { label: "Intro", id: "intro", icon: BookOpen },
+  { label: "Purpose", id: "purpose", icon: Target },
+  { label: "Description", id: "description", icon: FileText },
+  { label: "Budget", id: "budget", icon: Coins },
+  { label: "Contact", id: "contact", icon: MessageCircle },
 ];
 
 interface TopNavProps {
@@ -25,22 +25,25 @@ export function TopNav({ activeSection }: TopNavProps) {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-nav-bg/80 backdrop-blur-xl border-b border-primary/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <span className="font-display font-bold text-sm tracking-wide gradient-text">
-            ✨ DLH Project
-          </span>
+          <div className="flex items-center gap-2">
+            <Sparkles className="h-4 w-4 text-primary" />
+            <span className="font-display font-bold text-sm tracking-wide gradient-text">
+              DLH Project
+            </span>
+          </div>
 
-          {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-1">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollTo(item.id)}
-                className={`px-4 py-2 text-xs font-semibold tracking-wider rounded-full transition-all duration-300 ${
+                className={`px-4 py-2 text-xs font-semibold tracking-wider rounded-full transition-all duration-300 flex items-center gap-1.5 ${
                   activeSection === item.id
                     ? "bg-primary/20 text-primary glow-pink-sm"
                     : "text-foreground/50 hover:text-foreground hover:bg-secondary/50"
                 }`}
               >
+                <item.icon className="h-3.5 w-3.5" />
                 {item.label}
               </button>
             ))}
@@ -61,12 +64,13 @@ export function TopNav({ activeSection }: TopNavProps) {
             <button
               key={item.id}
               onClick={() => scrollTo(item.id)}
-              className={`block w-full text-left px-6 py-3.5 text-sm font-medium tracking-wider transition-all duration-300 ${
+              className={`flex items-center gap-3 w-full text-left px-6 py-3.5 text-sm font-medium tracking-wider transition-all duration-300 ${
                 activeSection === item.id
                   ? "text-primary bg-primary/10"
                   : "text-foreground/50 hover:text-foreground hover:bg-secondary/20"
               }`}
             >
+              <item.icon className="h-4 w-4" />
               {item.label}
             </button>
           ))}
