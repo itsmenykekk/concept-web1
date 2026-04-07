@@ -4,10 +4,10 @@ export function HeroSection() {
   return (
     <section className="relative min-h-[92vh] flex items-center pt-16 overflow-hidden">
       {/* Layered gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[hsl(280,30%,8%)] via-[hsl(310,25%,7%)] to-[hsl(270,30%,6%)]" />
-      <div className="absolute inset-0 opacity-25 bg-[radial-gradient(ellipse_at_20%_20%,hsl(330_85%_45%)_0%,transparent_55%)]" />
-      <div className="absolute inset-0 opacity-15 bg-[radial-gradient(ellipse_at_80%_80%,hsl(270_80%_45%)_0%,transparent_55%)]" />
-      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_50%_50%,hsl(300_70%_50%)_0%,transparent_40%)]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[hsl(340,40%,6%)] via-[hsl(345,30%,5%)] to-[hsl(335,35%,4%)]" />
+      <div className="absolute inset-0 opacity-25 bg-[radial-gradient(ellipse_at_20%_20%,hsl(340_90%_40%)_0%,transparent_55%)]" />
+      <div className="absolute inset-0 opacity-15 bg-[radial-gradient(ellipse_at_80%_80%,hsl(350_85%_45%)_0%,transparent_55%)]" />
+      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_50%_50%,hsl(345_80%_50%)_0%,transparent_40%)]" />
 
       {/* Floating orbs */}
       <div className="absolute top-20 left-[10%] w-64 h-64 bg-primary/8 rounded-full blur-3xl animate-pulse-glow" />
