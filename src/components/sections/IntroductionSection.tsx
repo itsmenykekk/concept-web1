@@ -3,7 +3,7 @@ import { BookOpen, PenLine } from "lucide-react";
 export function IntroductionSection() {
   return (
     <section id="intro" className="py-24 scroll-mt-16 relative overflow-hidden">
-      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_50%_0%,hsl(330_85%_45%)_0%,transparent_60%)]" />
+      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_50%_0%,hsl(340_90%_45%)_0%,transparent_60%)]" />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center space-y-6">
           <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.2em] text-primary uppercase">
