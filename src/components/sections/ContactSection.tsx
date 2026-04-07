@@ -10,7 +10,7 @@ const contactDetails = [
 export function ContactSection() {
   return (
     <section id="contact" className="py-24 scroll-mt-16 relative overflow-hidden">
-      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_50%_100%,hsl(330_85%_45%)_0%,transparent_60%)]" />
+      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_50%_100%,hsl(340_90%_45%)_0%,transparent_60%)]" />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto">
           <div className="glass rounded-3xl p-8 sm:p-10 space-y-7 glow-pink relative overflow-hidden">

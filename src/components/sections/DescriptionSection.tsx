@@ -3,7 +3,7 @@ import { FileText, PenLine } from "lucide-react";
 export function DescriptionSection() {
   return (
     <section id="description" className="py-24 scroll-mt-16 relative overflow-hidden">
-      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_20%_80%,hsl(330_85%_45%)_0%,transparent_55%)]" />
+      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_20%_80%,hsl(340_90%_45%)_0%,transparent_55%)]" />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-12">
           <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.2em] text-primary uppercase">
