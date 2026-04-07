@@ -1,64 +1,73 @@
-import { ArrowDown, Sparkles } from "lucide-react";
+import { ArrowDown, Sparkles, Wallet, Box, Brain, Monitor } from "lucide-react";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-[90vh] flex items-center pt-16 overflow-hidden">
-      {/* Gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-section-alt" />
-      <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_20%_30%,hsl(330_85%_40%)_0%,transparent_50%)]" />
-      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_80%_70%,hsl(270_80%_50%)_0%,transparent_50%)]" />
+    <section className="relative min-h-[92vh] flex items-center pt-16 overflow-hidden">
+      {/* Layered gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[hsl(280,30%,8%)] via-[hsl(310,25%,7%)] to-[hsl(270,30%,6%)]" />
+      <div className="absolute inset-0 opacity-25 bg-[radial-gradient(ellipse_at_20%_20%,hsl(330_85%_45%)_0%,transparent_55%)]" />
+      <div className="absolute inset-0 opacity-15 bg-[radial-gradient(ellipse_at_80%_80%,hsl(270_80%_45%)_0%,transparent_55%)]" />
+      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_50%_50%,hsl(300_70%_50%)_0%,transparent_40%)]" />
 
       {/* Floating orbs */}
-      <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-pulse-glow" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: "1.5s" }} />
+      <div className="absolute top-20 left-[10%] w-64 h-64 bg-primary/8 rounded-full blur-3xl animate-pulse-glow" />
+      <div className="absolute bottom-20 right-[10%] w-80 h-80 bg-accent/6 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: "1.5s" }} />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/3 rounded-full blur-[100px] animate-pulse-glow" style={{ animationDelay: "3s" }} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left: Text */}
-          <div className="space-y-6">
-            <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.2em] text-primary uppercase bg-primary/10 px-4 py-1.5 rounded-full border border-primary/20">
-              <Sparkles className="h-3 w-3" />
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Left */}
+          <div className="space-y-7">
+            <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.25em] text-primary uppercase bg-gradient-to-r from-primary/15 to-accent/10 px-5 py-2 rounded-full border border-primary/20 backdrop-blur-sm">
+              <Sparkles className="h-3.5 w-3.5" />
               Concept Paper
             </span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold leading-tight text-foreground">
+            <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-display font-bold leading-[1.1] text-foreground">
               Digital Learning
               <br />
-              <span className="gradient-text">Hub ✨</span>
+              <span className="gradient-text">Hub</span>
             </h1>
-            <p className="text-foreground/50 leading-relaxed max-w-lg text-sm sm:text-base">
+            <p className="text-foreground/45 leading-relaxed max-w-lg text-sm sm:text-[15px]">
               Increasing student learning through ICT — a platform for
-              collaboration, knowledge sharing, and academic excellence. 🚀
+              collaboration, knowledge sharing, and academic excellence.
             </p>
-            <div className="flex gap-3 pt-2">
+            <div className="flex gap-3 pt-1">
               <button
                 onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-                className="bg-gradient-to-r from-primary to-accent text-primary-foreground px-6 py-2.5 rounded-full font-semibold text-sm hover:opacity-90 transition-all duration-300 glow-pink"
+                className="bg-gradient-to-r from-primary via-pink-glow to-accent text-primary-foreground px-7 py-3 rounded-full font-semibold text-sm hover:opacity-90 transition-all duration-300 glow-pink shadow-lg shadow-primary/25"
               >
-                💌 Contact Us
+                Contact Us
               </button>
               <button
                 onClick={() => document.getElementById("intro")?.scrollIntoView({ behavior: "smooth" })}
-                className="border border-primary/30 text-foreground/70 px-6 py-2.5 rounded-full font-semibold text-sm hover:bg-primary/10 hover:text-foreground transition-all duration-300 flex items-center gap-2"
+                className="border border-primary/20 text-foreground/60 px-7 py-3 rounded-full font-semibold text-sm hover:bg-primary/10 hover:text-foreground hover:border-primary/40 transition-all duration-300 flex items-center gap-2 backdrop-blur-sm"
               >
                 Learn More <ArrowDown className="h-4 w-4" />
               </button>
             </div>
           </div>
 
-          {/* Right: Project Overview Card */}
-          <div className="space-y-4">
-            <div className="glass rounded-2xl p-6 glow-pink">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-3 h-3 rounded-full bg-primary animate-pulse" />
-                <div className="w-3 h-3 rounded-full bg-accent/60" />
-                <div className="w-3 h-3 rounded-full bg-muted-foreground/40" />
-              </div>
-              <p className="text-xs text-muted-foreground uppercase tracking-widest mb-4">📊 Project Overview</p>
-              <div className="grid grid-cols-2 gap-3">
-                <StatCard emoji="💸" label="Total Budget" value="₱5K" />
-                <StatCard emoji="📦" label="Budget Items" value="4" />
-                <StatCard emoji="🧠" label="Century Skills" value="21st" />
-                <StatCard emoji="💻" label="Focused" value="ICT" />
+          {/* Right: Overview Card */}
+          <div>
+            <div className="glass rounded-3xl p-7 glow-pink relative overflow-hidden">
+              {/* Subtle inner gradient */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 rounded-3xl" />
+              <div className="relative">
+                <div className="flex items-center gap-2 mb-5">
+                  <div className="w-3 h-3 rounded-full bg-gradient-to-r from-primary to-pink-glow animate-pulse" />
+                  <div className="w-3 h-3 rounded-full bg-accent/50" />
+                  <div className="w-3 h-3 rounded-full bg-muted-foreground/30" />
+                </div>
+                <div className="flex items-center gap-2 mb-5">
+                  <Sparkles className="h-3.5 w-3.5 text-primary" />
+                  <p className="text-[11px] text-muted-foreground uppercase tracking-[0.2em]">Project Overview</p>
+                </div>
+                <div className="grid grid-cols-2 gap-3">
+                  <StatCard icon={Wallet} label="Total Budget" value="₱5K" />
+                  <StatCard icon={Box} label="Budget Items" value="4" />
+                  <StatCard icon={Brain} label="Century Skills" value="21st" />
+                  <StatCard icon={Monitor} label="Focused" value="ICT" />
+                </div>
               </div>
             </div>
           </div>
@@ -68,10 +77,10 @@ export function HeroSection() {
   );
 }
 
-function StatCard({ label, value, emoji }: { label: string; value: string; emoji: string }) {
+function StatCard({ label, value, icon: Icon }: { label: string; value: string; icon: React.ElementType }) {
   return (
-    <div className="bg-stat-card/80 rounded-xl p-4 transition-all duration-300 hover:bg-primary/10 hover:scale-[1.02] group border border-primary/5">
-      <p className="text-xs mb-1">{emoji}</p>
+    <div className="bg-gradient-to-br from-stat-card/80 to-stat-card/40 rounded-2xl p-4 transition-all duration-300 hover:from-primary/15 hover:to-accent/10 hover:scale-[1.03] group border border-primary/5 hover:border-primary/15 backdrop-blur-sm">
+      <Icon className="h-4 w-4 text-primary/70 mb-2 group-hover:text-primary transition-colors" />
       <p className="text-2xl font-display font-bold gradient-text">{value}</p>
       <p className="text-[11px] text-muted-foreground mt-1">{label}</p>
     </div>
