@@ -2,11 +2,11 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
-  { label: "INTRO", id: "intro" },
-  { label: "PURPOSE", id: "purpose" },
-  { label: "DESCRIPTION", id: "description" },
-  { label: "BUDGET", id: "budget" },
-  { label: "CONTACT", id: "contact" },
+  { label: "📖 Intro", id: "intro" },
+  { label: "🎯 Purpose", id: "purpose" },
+  { label: "📋 Description", id: "description" },
+  { label: "💰 Budget", id: "budget" },
+  { label: "📬 Contact", id: "contact" },
 ];
 
 interface TopNavProps {
@@ -22,11 +22,11 @@ export function TopNav({ activeSection }: TopNavProps) {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-nav-bg/95 backdrop-blur-md border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-nav-bg/80 backdrop-blur-xl border-b border-primary/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-14">
-          <span className="font-display font-bold text-primary text-sm tracking-wide">
-            DLH Project
+        <div className="flex items-center justify-between h-16">
+          <span className="font-display font-bold text-sm tracking-wide gradient-text">
+            ✨ DLH Project
           </span>
 
           {/* Desktop nav */}
@@ -35,10 +35,10 @@ export function TopNav({ activeSection }: TopNavProps) {
               <button
                 key={item.id}
                 onClick={() => scrollTo(item.id)}
-                className={`px-4 py-2 text-xs font-semibold tracking-widest rounded-md transition-all duration-200 ${
+                className={`px-4 py-2 text-xs font-semibold tracking-wider rounded-full transition-all duration-300 ${
                   activeSection === item.id
-                    ? "text-primary border-b-2 border-primary"
-                    : "text-foreground/60 hover:text-foreground hover:bg-secondary/50"
+                    ? "bg-primary/20 text-primary glow-pink-sm"
+                    : "text-foreground/50 hover:text-foreground hover:bg-secondary/50"
                 }`}
               >
                 {item.label}
@@ -46,7 +46,6 @@ export function TopNav({ activeSection }: TopNavProps) {
             ))}
           </div>
 
-          {/* Mobile toggle */}
           <button
             className="md:hidden text-foreground/80 p-2"
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -56,17 +55,16 @@ export function TopNav({ activeSection }: TopNavProps) {
         </div>
       </div>
 
-      {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-nav-bg border-t border-border">
+        <div className="md:hidden bg-nav-bg/95 backdrop-blur-xl border-t border-primary/10">
           {navItems.map((item) => (
             <button
               key={item.id}
               onClick={() => scrollTo(item.id)}
-              className={`block w-full text-left px-6 py-3 text-sm font-medium tracking-wider transition-colors ${
+              className={`block w-full text-left px-6 py-3.5 text-sm font-medium tracking-wider transition-all duration-300 ${
                 activeSection === item.id
-                  ? "text-primary bg-secondary/30"
-                  : "text-foreground/60 hover:text-foreground hover:bg-secondary/20"
+                  ? "text-primary bg-primary/10"
+                  : "text-foreground/50 hover:text-foreground hover:bg-secondary/20"
               }`}
             >
               {item.label}
