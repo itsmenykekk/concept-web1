@@ -50,8 +50,8 @@ export default {
         "nav-bg": "hsl(var(--nav-bg))",
         "stat-card": "hsl(var(--stat-card))",
         "section-alt": "hsl(var(--section-alt))",
-        "pink-glow": "hsl(var(--pink-glow))",
         "purple-glow": "hsl(var(--purple-glow))",
+        "cyber-glow": "hsl(var(--cyber-glow))",
       },
       fontFamily: {
         display: ["Space Grotesk", "sans-serif"],

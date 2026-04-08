@@ -3,20 +3,17 @@ import { ArrowDown, Sparkles, Wallet, Box, Brain, Monitor } from "lucide-react";
 export function HeroSection() {
   return (
     <section className="relative min-h-[92vh] flex items-center pt-16 overflow-hidden">
-      {/* Layered gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[hsl(340,40%,6%)] via-[hsl(345,30%,5%)] to-[hsl(335,35%,4%)]" />
-      <div className="absolute inset-0 opacity-25 bg-[radial-gradient(ellipse_at_20%_20%,hsl(340_90%_40%)_0%,transparent_55%)]" />
-      <div className="absolute inset-0 opacity-15 bg-[radial-gradient(ellipse_at_80%_80%,hsl(350_85%_45%)_0%,transparent_55%)]" />
-      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_50%_50%,hsl(345_80%_50%)_0%,transparent_40%)]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[hsl(260,40%,6%)] via-[hsl(265,30%,5%)] to-[hsl(255,35%,4%)]" />
+      <div className="absolute inset-0 opacity-25 bg-[radial-gradient(ellipse_at_20%_20%,hsl(270_90%_40%)_0%,transparent_55%)]" />
+      <div className="absolute inset-0 opacity-15 bg-[radial-gradient(ellipse_at_80%_80%,hsl(290_85%_45%)_0%,transparent_55%)]" />
+      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_50%_50%,hsl(280_80%_50%)_0%,transparent_40%)]" />
 
-      {/* Floating orbs */}
       <div className="absolute top-20 left-[10%] w-64 h-64 bg-primary/8 rounded-full blur-3xl animate-pulse-glow" />
       <div className="absolute bottom-20 right-[10%] w-80 h-80 bg-accent/6 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: "1.5s" }} />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/3 rounded-full blur-[100px] animate-pulse-glow" style={{ animationDelay: "3s" }} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left */}
           <div className="space-y-7">
             <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.25em] text-primary uppercase bg-gradient-to-r from-primary/15 to-accent/10 px-5 py-2 rounded-full border border-primary/20 backdrop-blur-sm">
               <Sparkles className="h-3.5 w-3.5" />
@@ -34,7 +31,7 @@ export function HeroSection() {
             <div className="flex gap-3 pt-1">
               <button
                 onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-                className="bg-gradient-to-r from-primary via-pink-glow to-accent text-primary-foreground px-7 py-3 rounded-full font-semibold text-sm hover:opacity-90 transition-all duration-300 glow-pink shadow-lg shadow-primary/25"
+                className="bg-gradient-to-r from-primary via-purple-glow to-accent text-primary-foreground px-7 py-3 rounded-full font-semibold text-sm hover:opacity-90 transition-all duration-300 glow-pink shadow-lg shadow-primary/25"
               >
                 Contact Us
               </button>
@@ -47,14 +44,12 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* Right: Overview Card */}
           <div>
             <div className="glass rounded-3xl p-7 glow-pink relative overflow-hidden">
-              {/* Subtle inner gradient */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 rounded-3xl" />
               <div className="relative">
                 <div className="flex items-center gap-2 mb-5">
-                  <div className="w-3 h-3 rounded-full bg-gradient-to-r from-primary to-pink-glow animate-pulse" />
+                  <div className="w-3 h-3 rounded-full bg-gradient-to-r from-primary to-purple-glow animate-pulse" />
                   <div className="w-3 h-3 rounded-full bg-accent/50" />
                   <div className="w-3 h-3 rounded-full bg-muted-foreground/30" />
                 </div>

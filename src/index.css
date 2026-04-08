@@ -6,42 +6,42 @@
 
 @layer base {
   :root {
-    --background: 340 40% 5%;
-    --foreground: 340 20% 95%;
+    --background: 260 40% 5%;
+    --foreground: 260 20% 95%;
 
-    --card: 340 35% 9%;
-    --card-foreground: 340 20% 95%;
+    --card: 260 35% 9%;
+    --card-foreground: 260 20% 95%;
 
-    --popover: 340 35% 7%;
-    --popover-foreground: 340 20% 95%;
+    --popover: 260 35% 7%;
+    --popover-foreground: 260 20% 95%;
 
-    --primary: 340 90% 55%;
+    --primary: 270 90% 65%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 340 30% 13%;
-    --secondary-foreground: 340 20% 95%;
+    --secondary: 260 30% 13%;
+    --secondary-foreground: 260 20% 95%;
 
-    --muted: 340 25% 15%;
-    --muted-foreground: 340 15% 50%;
+    --muted: 260 25% 15%;
+    --muted-foreground: 260 15% 50%;
 
-    --accent: 350 85% 65%;
+    --accent: 290 85% 65%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 340 30% 15%;
-    --input: 340 30% 15%;
-    --ring: 340 90% 55%;
+    --border: 260 30% 15%;
+    --input: 260 30% 15%;
+    --ring: 270 90% 65%;
 
     --radius: 1rem;
 
-    --nav-bg: 340 40% 4%;
-    --stat-card: 340 30% 11%;
-    --section-alt: 340 35% 7%;
+    --nav-bg: 260 40% 4%;
+    --stat-card: 260 30% 11%;
+    --section-alt: 260 35% 7%;
 
-    --pink-glow: 345 100% 70%;
-    --purple-glow: 330 90% 60%;
+    --purple-glow: 280 100% 70%;
+    --cyber-glow: 265 90% 60%;
   }
 }
 
@@ -71,9 +71,9 @@ html {
   border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-/* Pink gradient text */
+/* Purple gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, hsl(340 90% 55%), hsl(350 85% 65%), hsl(345 100% 70%));
+  background: linear-gradient(135deg, hsl(270 90% 65%), hsl(290 85% 65%), hsl(280 100% 70%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -81,9 +81,9 @@ html {
 
 /* Glow effect */
 .glow-pink {
-  box-shadow: 0 0 30px -5px hsla(330, 85%, 60%, 0.3), 0 0 60px -10px hsla(270, 80%, 65%, 0.15);
+  box-shadow: 0 0 30px -5px hsla(270, 85%, 60%, 0.3), 0 0 60px -10px hsla(290, 80%, 65%, 0.15);
 }
 
 .glow-pink-sm {
-  box-shadow: 0 0 15px -3px hsla(330, 85%, 60%, 0.2);
+  box-shadow: 0 0 15px -3px hsla(270, 85%, 60%, 0.2);
 }
