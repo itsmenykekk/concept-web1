@@ -57,7 +57,7 @@ export function HeroSection() {
               Concept Paper
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-display font-bold leading-[1.1] text-foreground">
-              Digital Learning
+              FinanceKnowledge
               <br />
               <span className="gradient-text">Hub</span>
             </h1>
