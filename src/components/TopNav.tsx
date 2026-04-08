@@ -29,7 +29,7 @@ export function TopNav({ activeSection }: TopNavProps) {
           <div className="flex items-center gap-2">
             <Sparkles className="h-4 w-4 text-primary" />
             <span className="font-display font-bold text-sm tracking-wide gradient-text">
-              DLH Project
+              ICT - ABM 11-2
             </span>
           </div>
 
