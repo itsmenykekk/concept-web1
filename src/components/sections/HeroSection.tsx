@@ -1,4 +1,39 @@
 import { ArrowDown, Sparkles, Wallet, Box, Brain, Monitor } from "lucide-react";
+import { useEffect, useState } from "react";
+
+function FloatingDots() {
+  const [dots] = useState(() =>
+    Array.from({ length: 30 }, (_, i) => ({
+      id: i,
+      left: Math.random() * 100,
+      top: Math.random() * 100,
+      size: Math.random() * 4 + 2,
+      delay: Math.random() * 5,
+      duration: Math.random() * 4 + 4,
+      opacity: Math.random() * 0.4 + 0.1,
+    }))
+  );
+
+  return (
+    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      {dots.map((dot) => (
+        <div
+          key={dot.id}
+          className="absolute rounded-full bg-primary animate-float"
+          style={{
+            left: `${dot.left}%`,
+            top: `${dot.top}%`,
+            width: `${dot.size}px`,
+            height: `${dot.size}px`,
+            opacity: dot.opacity,
+            animationDelay: `${dot.delay}s`,
+            animationDuration: `${dot.duration}s`,
+          }}
+        />
+      ))}
+    </div>
+  );
+}
 
 export function HeroSection() {
   return (
@@ -8,13 +43,15 @@ export function HeroSection() {
       <div className="absolute inset-0 opacity-15 bg-[radial-gradient(ellipse_at_80%_80%,hsl(290_85%_45%)_0%,transparent_55%)]" />
       <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_50%_50%,hsl(280_80%_50%)_0%,transparent_40%)]" />
 
+      <FloatingDots />
+
       <div className="absolute top-20 left-[10%] w-64 h-64 bg-primary/8 rounded-full blur-3xl animate-pulse-glow" />
       <div className="absolute bottom-20 right-[10%] w-80 h-80 bg-accent/6 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: "1.5s" }} />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/3 rounded-full blur-[100px] animate-pulse-glow" style={{ animationDelay: "3s" }} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-7">
+          <div className="space-y-7 animate-fade-in">
             <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.25em] text-primary uppercase bg-gradient-to-r from-primary/15 to-accent/10 px-5 py-2 rounded-full border border-primary/20 backdrop-blur-sm">
               <Sparkles className="h-3.5 w-3.5" />
               Concept Paper
@@ -44,7 +81,7 @@ export function HeroSection() {
             </div>
           </div>
 
-          <div>
+          <div className="animate-scale-in">
             <div className="glass rounded-3xl p-7 glow-pink relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 rounded-3xl" />
               <div className="relative">
