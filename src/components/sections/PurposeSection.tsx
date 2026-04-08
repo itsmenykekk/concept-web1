@@ -3,7 +3,6 @@ import { Target, PenLine } from "lucide-react";
 export function PurposeSection() {
   return (
     <section id="purpose" className="py-24 bg-section-alt scroll-mt-16 relative overflow-hidden">
-      <div className="absolute inset-0 opacity-8 bg-[radial-gradient(ellipse_at_80%_50%,hsl(280_85%_45%)_0%,transparent_55%)]" />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-12">
           <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.2em] text-primary uppercase">
