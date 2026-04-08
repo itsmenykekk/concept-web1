@@ -59,7 +59,7 @@ export function HeroSection() {
             <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-display font-bold leading-[1.1] text-foreground">
               FinanceKnowledge
               <br />
-              <span className="gradient-text">Hub</span>
+              <span className="gradient-text">ICT - ABM 11-2</span>
             </h1>
             <p className="text-foreground/45 leading-relaxed max-w-lg text-sm sm:text-[15px]">
               Increasing student learning through ICT — a platform for
