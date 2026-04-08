@@ -6,9 +6,10 @@ import { PurposeSection } from "@/components/sections/PurposeSection";
 import { DescriptionSection } from "@/components/sections/DescriptionSection";
 import { BudgetSection } from "@/components/sections/BudgetSection";
 import { ContactSection } from "@/components/sections/ContactSection";
+import { MembersSection } from "@/components/sections/MembersSection";
 import { FooterSection } from "@/components/sections/FooterSection";
 
-const sections = ["intro", "purpose", "description", "budget", "contact"];
+const sections = ["intro", "purpose", "description", "budget", "contact", "members"];
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("intro");
@@ -36,6 +37,7 @@ const Index = () => {
       <DescriptionSection />
       <BudgetSection />
       <ContactSection />
+      <MembersSection />
       <FooterSection />
     </div>
   );

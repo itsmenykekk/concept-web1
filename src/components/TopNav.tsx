@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, BookOpen, Target, FileText, Coins, MessageCircle, Sparkles } from "lucide-react";
+import { Menu, X, BookOpen, Target, FileText, Coins, MessageCircle, Users, Sparkles } from "lucide-react";
 
 const navItems = [
   { label: "Intro", id: "intro", icon: BookOpen },
@@ -7,6 +7,7 @@ const navItems = [
   { label: "Description", id: "description", icon: FileText },
   { label: "Budget", id: "budget", icon: Coins },
   { label: "Contact", id: "contact", icon: MessageCircle },
+  { label: "Members", id: "members", icon: Users },
 ];
 
 interface TopNavProps {
