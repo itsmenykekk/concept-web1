@@ -21,7 +21,11 @@ export function IntroductionSection() {
             <div className="relative flex flex-col items-center gap-3">
               <PenLine className="h-6 w-6 text-primary/50" />
               <p className="text-muted-foreground italic text-sm">
-                Wala pang laman — hinihintay pa ang concept paper.
+                Financial literacy is important for students and young entrepreneurs who are starting small businesses or finding ways to earn extra income. It helps them manage their money properly by learning how to budget, save, and make wise financial decisions. Beyond tracking income and expenses, financial literacy also helps them plan for the future of their business, make better choices, and use their earnings wisely, whether for savings, expenses, or reinvestment.
+
+                Also, the study follows its vision and mission to help young individuals and small business owners feel confident managing their money. It guides them to make thoughtful financial choices and gradually create a more stable and fulfilling life.
+
+                Overall, financial literacy plays a big role in helping them make smarter financial choices and grow their small businesses toward long-term success.
               </p>
             </div>
           </div>
