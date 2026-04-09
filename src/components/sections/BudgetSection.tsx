@@ -33,7 +33,7 @@ export function BudgetSection() {
           <div className="relative flex flex-col items-center gap-3">
             <PenLine className="h-6 w-6 text-primary/50" />
             <p className="text-muted-foreground italic text-sm">
-              Wala pang laman — hinihintay pa ang concept paper.
+              To make the Financial Literacy Website Project a success, we need enough financial as well as technical support. This proposed budget will be used to build, design, and to maintain the website, as well as to create helpful learning materials. These allocated budgets will ensure that the website would be easy to use, would be reliable, and would also be useful for the students and small business owners who want to improve their financial skills.
             </p>
           </div>
         </div>
