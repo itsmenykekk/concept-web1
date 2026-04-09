@@ -1,10 +1,10 @@
 import { User, Briefcase, Mail, Phone, MessageSquareHeart } from "lucide-react";
 
 const contactDetails = [
-  { icon: User, label: "Name", value: "Angela Gardoce" },
-  { icon: Briefcase, label: "Position", value: "Eywan" },
-  { icon: Mail, label: "Email", value: "anotara@gmail.com" },
-  { icon: Phone, label: "Phone", value: "numberko" },
+  { icon: User, label: "Name", value: "Rhieyzel Anne Bellingan" },
+  { icon: Briefcase, label: "Position", value: "Group Leader" },
+  { icon: Mail, label: "Email", value: "rsbellingan0136val@student.fatima.edu.ph" },
+  { icon: Phone, label: "Phone", value: "09682296373" },
 ];
 
 export function ContactSection() {
