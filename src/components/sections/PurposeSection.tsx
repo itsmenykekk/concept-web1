@@ -19,7 +19,8 @@ export function PurposeSection() {
           <div className="relative flex flex-col items-center gap-3">
             <PenLine className="h-6 w-6 text-primary/50" />
             <p className="text-muted-foreground italic text-sm">
-              Wala pang laman — hinihintay pa ang concept paper.
+              This project focuses on improving financial literacy among young people and small business owners through the mobile app. It aims to address the common problem of the poor financial management by providing accessible online financial education. The app will assist the users develop essential skills such as a budgeting, saving, and also to expense tracking.
+              The project is valuable in terms of time, effort, and the resources for both the group and potential sponsors. It is designed to help young entrepreneurs manage their finances more effectively, avoid common financial mistakes, and support the long-term success of their businesses.
             </p>
           </div>
         </div>
