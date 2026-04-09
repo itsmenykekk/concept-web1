@@ -44,27 +44,24 @@ export function BudgetSection() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-primary/20 bg-primary/5">
-                  <th className="text-left px-6 py-4 font-display font-semibold text-foreground">Item/Activity</th>
-                  <th className="text-left px-6 py-4 font-display font-semibold text-foreground hidden sm:table-cell">Description</th>
-                  <th className="text-right px-6 py-4 font-display font-semibold text-foreground whitespace-nowrap">Estimated Cost</th>
+                  <th className="text-left px-3 sm:px-6 py-4 font-display font-semibold text-foreground text-xs sm:text-sm">Item/Activity</th>
+                  <th className="text-left px-3 sm:px-6 py-4 font-display font-semibold text-foreground text-xs sm:text-sm">Description</th>
+                  <th className="text-right px-3 sm:px-6 py-4 font-display font-semibold text-foreground text-xs sm:text-sm whitespace-nowrap">Estimated Cost</th>
                 </tr>
               </thead>
               <tbody>
                 {budgetItems.map((row, i) => (
                   <tr key={i} className="border-b border-primary/10 hover:bg-primary/5 transition-colors">
-                    <td className="px-6 py-4 font-medium text-foreground/90">
-                      {row.item}
-                      <p className="text-muted-foreground text-xs mt-1 sm:hidden">{row.desc}</p>
-                    </td>
-                    <td className="px-6 py-4 text-muted-foreground text-xs leading-relaxed hidden sm:table-cell max-w-xs">{row.desc}</td>
-                    <td className="px-6 py-4 text-right text-primary font-semibold whitespace-nowrap">{row.cost}</td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-foreground/90 text-xs sm:text-sm">{row.item}</td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-muted-foreground text-[11px] sm:text-xs leading-relaxed">{row.desc}</td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-right text-primary font-semibold whitespace-nowrap text-xs sm:text-sm">{row.cost}</td>
                   </tr>
                 ))}
               </tbody>
               <tfoot>
                 <tr className="bg-primary/10">
-                  <td colSpan={2} className="px-6 py-4 font-display font-bold text-foreground text-right">Total</td>
-                  <td className="px-6 py-4 text-right font-display font-bold text-primary text-base">₱116,000</td>
+                  <td colSpan={2} className="px-3 sm:px-6 py-4 font-display font-bold text-foreground text-right text-xs sm:text-sm">Total</td>
+                  <td className="px-3 sm:px-6 py-4 text-right font-display font-bold text-primary text-sm sm:text-base">₱116,000</td>
                 </tr>
               </tfoot>
             </table>
