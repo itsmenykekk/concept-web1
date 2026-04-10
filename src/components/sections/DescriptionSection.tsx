@@ -1,4 +1,4 @@
-import { FileText, PenLine } from "lucide-react";
+import { FileText } from "lucide-react";
 
 export function DescriptionSection() {
   return (
@@ -17,7 +17,7 @@ export function DescriptionSection() {
         <div className="max-w-2xl mx-auto glass rounded-2xl p-12 text-center glow-pink-sm relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/3 to-accent/3 rounded-2xl" />
           <div className="relative flex flex-col items-center gap-3">
-            <PenLine className="h-6 w-6 text-primary/50" />
+            
             <p className="text-muted-foreground italic text-sm">
               This project is a website aimed at improving financial literacy among young people and small business owners in the Philippines. Despite increased access to financial services, many individuals struggle with managing money, leading to debt, poor investments, and business challenges.
               The website provides simple, easy-to-understand information on key financial topics such as budgeting, saving, investing, responsible borrowing, tax compliance, and cash flow management. It highlights both the benefits of good financial habits and the risks of poor financial knowledge, showing how these affect personal stability, career growth, and business success.

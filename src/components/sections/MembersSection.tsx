@@ -3,17 +3,24 @@ import { Users, User, ChevronLeft, ChevronRight } from "lucide-react";
 
 import rhieyzelImg from "@/assets/members/rhieyzel.jpeg";
 import angelaImg from "@/assets/members/angela.jpeg";
+import faithImg from "@/assets/members/faith.jpeg";
+import keizerImg from "@/assets/members/keizer.jpeg";
+import deinielImg from "@/assets/members/deiniel.jpeg";
+import januariusImg from "@/assets/members/januarius.jpeg";
+import shinaImg from "@/assets/members/shina.jpeg";
+import ashleyImg from "@/assets/members/ashley.jpeg";
+import vincentImg from "@/assets/members/vincent.jpeg";
 
 const members = [
-  { name: "Shina Ashley Abrera", photo: null },
+  { name: "Shina Ashley Abrera", photo: shinaImg },
   { name: "Rhieyzel Anne Bellingan", photo: rhieyzelImg },
-  { name: "Deiniel De Dios", photo: null },
-  { name: "Vincent Galdo", photo: null },
-  { name: "Keizer Garcia", photo: null },
+  { name: "Deiniel De Dios", photo: deinielImg },
+  { name: "Vincent Galdo", photo: vincentImg },
+  { name: "Keizer Garcia", photo: keizerImg },
   { name: "Angela Gardoce", photo: angelaImg },
-  { name: "Jan Ashley Longasa", photo: null },
-  { name: "Januarius Matthew", photo: null },
-  { name: "Faith Alexis Rasalan", photo: null },
+  { name: "Jan Ashley Longasa", photo: ashleyImg },
+  { name: "Januarius Matthew", photo: januariusImg },
+  { name: "Faith Alexis Rasalan", photo: faithImg },
 ];
 
 export function MembersSection() {
@@ -66,19 +73,13 @@ export function MembersSection() {
                     key={current}
                     className="flex flex-col items-center gap-3 animate-fade-in"
                   >
-                    {member.photo ? (
-                      <div className="w-20 h-20 rounded-2xl overflow-hidden border-2 border-primary/20 shadow-lg">
-                        <img
-                          src={member.photo}
-                          alt={member.name}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    ) : (
-                      <div className="bg-gradient-to-br from-primary/20 to-accent/15 w-14 h-14 rounded-2xl flex items-center justify-center border border-primary/10">
-                        <User className="h-6 w-6 text-primary" />
-                      </div>
-                    )}
+                    <div className="w-20 h-20 rounded-2xl overflow-hidden border-2 border-primary/20 shadow-lg">
+                      <img
+                        src={member.photo}
+                        alt={member.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                     <p className="text-base font-semibold text-foreground text-center">{member.name}</p>
                     <p className="text-[11px] text-muted-foreground">Member</p>
                   </div>

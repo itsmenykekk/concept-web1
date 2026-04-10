@@ -1,4 +1,4 @@
-import { BookOpen, PenLine, Eye, Target } from "lucide-react";
+import { BookOpen, Eye, Target } from "lucide-react";
 
 export function IntroductionSection() {
   return (
@@ -19,7 +19,7 @@ export function IntroductionSection() {
           <div className="glass rounded-2xl p-12 glow-pink-sm relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/3 to-accent/3 rounded-2xl" />
             <div className="relative flex flex-col items-center gap-3">
-              <PenLine className="h-6 w-6 text-primary/50" />
+              
               <p className="text-muted-foreground italic text-sm">
                 Financial literacy is important for students and young entrepreneurs who are starting small businesses or finding ways to earn extra income. It helps them manage their money properly by learning how to budget, save, and make wise financial decisions. Beyond tracking income and expenses, financial literacy also helps them plan for the future of their business, make better choices, and use their earnings wisely, whether for savings, expenses, or reinvestment.
 
