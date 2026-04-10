@@ -1,4 +1,4 @@
-import { Target, PenLine } from "lucide-react";
+import { Target } from "lucide-react";
 
 export function PurposeSection() {
   return (
@@ -17,7 +17,7 @@ export function PurposeSection() {
         <div className="max-w-2xl mx-auto glass rounded-2xl p-12 text-center glow-pink-sm relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/3 to-accent/3 rounded-2xl" />
           <div className="relative flex flex-col items-center gap-3">
-            <PenLine className="h-6 w-6 text-primary/50" />
+            
             <p className="text-muted-foreground italic text-sm">
               This project focuses on improving financial literacy among young people and small business owners through the mobile app. It aims to address the common problem of the poor financial management by providing accessible online financial education. The app will assist the users develop essential skills such as a budgeting, saving, and also to expense tracking.
               The project is valuable in terms of time, effort, and the resources for both the group and potential sponsors. It is designed to help young entrepreneurs manage their finances more effectively, avoid common financial mistakes, and support the long-term success of their businesses.

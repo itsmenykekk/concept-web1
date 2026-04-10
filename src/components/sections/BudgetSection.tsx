@@ -1,4 +1,4 @@
-import { Coins, PenLine } from "lucide-react";
+import { Coins } from "lucide-react";
 
 const budgetItems = [
   { item: "Online Learning Materials", desc: "Development of infographics, financial modules, budgeting guides, and short educational videos.", cost: "₱12,000" },
@@ -31,7 +31,7 @@ export function BudgetSection() {
         <div className="max-w-2xl mx-auto glass rounded-2xl p-12 text-center glow-pink-sm relative overflow-hidden mb-10">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/3 to-accent/3 rounded-2xl" />
           <div className="relative flex flex-col items-center gap-3">
-            <PenLine className="h-6 w-6 text-primary/50" />
+            
             <p className="text-muted-foreground italic text-sm">
               To make the Financial Literacy Website Project a success, we need enough financial as well as technical support. This proposed budget will be used to build, design, and to maintain the website, as well as to create helpful learning materials. These allocated budgets will ensure that the website would be easy to use, would be reliable, and would also be useful for the students and small business owners who want to improve their financial skills.
             </p>
