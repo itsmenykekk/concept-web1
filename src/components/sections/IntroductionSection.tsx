@@ -27,10 +27,6 @@ export function IntroductionSection() {
 
                 Overall, financial literacy plays a big role in helping them make smarter financial choices and grow their small businesses toward long-term success.
               </p>
-              <div className="flex items-center justify-center gap-2 mt-4 pt-4 border-t border-primary/10">
-                <span className="text-xs text-muted-foreground">Total Budget:</span>
-                <span className="text-lg font-display font-bold text-primary">₱116K</span>
-              </div>
             </div>
           </div>
 
