@@ -95,7 +95,7 @@ export function HeroSection() {
                   <p className="text-[11px] text-muted-foreground uppercase tracking-[0.2em]">Project Overview</p>
                 </div>
                 <div className="grid grid-cols-2 gap-3">
-                  <StatCard icon={Wallet} label="Total Budget" value="₱5K" />
+                  <StatCard icon={Wallet} label="Total Budget" value="₱116K" />
                   <StatCard icon={Box} label="Budget Items" value="4" />
                   <StatCard icon={Brain} label="Century Skills" value="21st" />
                   <StatCard icon={Monitor} label="Focused" value="ICT" />
