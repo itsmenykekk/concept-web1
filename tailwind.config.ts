@@ -54,8 +54,8 @@ export default {
         "cyber-glow": "hsl(var(--cyber-glow))",
       },
       fontFamily: {
-        display: ["Space Grotesk", "sans-serif"],
-        sans: ["Inter", "sans-serif"],
+        display: ["Poppins", "sans-serif"],
+        sans: ["DM Sans", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
