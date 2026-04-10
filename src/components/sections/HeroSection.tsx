@@ -96,7 +96,7 @@ export function HeroSection() {
                 </div>
                 <div className="grid grid-cols-2 gap-3">
                   <StatCard icon={Wallet} label="Total Budget" value="₱116K" />
-                  <StatCard icon={Box} label="Budget Items" value="4" />
+                  <StatCard icon={Box} label="Budget Items" value="9" />
                   <StatCard icon={Brain} label="Century Skills" value="21st" />
                   <StatCard icon={Monitor} label="Focused" value="ICT" />
                 </div>
