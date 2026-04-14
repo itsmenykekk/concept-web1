@@ -19,8 +19,8 @@ export function PurposeSection() {
           <div className="relative flex flex-col items-center gap-3">
             
             <p className="text-muted-foreground italic text-sm">
-              This project focuses on improving financial literacy among young people and small business owners through the mobile app. It aims to address the common problem of the poor financial management by providing accessible online financial education. The app will assist the users develop essential skills such as a budgeting, saving, and also to expense tracking.
-              The project is valuable in terms of time, effort, and the resources for both the group and potential sponsors. It is designed to help young entrepreneurs manage their finances more effectively, avoid common financial mistakes, and support the long-term success of their businesses.
+              This project focuses on improving financial literacy among young people and small business owners through the mobile app. It aims to address the common problem of the poor financial management by providing accessible online financial education. The app will assist the users develop essential skills such as a budgeting, saving, and also to expense tracking. The project is valuable in terms of time, effort, and the resources for both the group and potential sponsors. It is designed to help young entrepreneurs manage their finances more effectively, avoid common financial mistakes, and support the long-term success of their businesses. And also, our app create and provide of a modules and learning materials that are simple, interactive, and easy to understand. These 
+              learning materials and also the modules are designed to guide the users step-by-step in learning important financial such as budgeting, saving, and also managing expenses.
             </p>
           </div>
         </div>
